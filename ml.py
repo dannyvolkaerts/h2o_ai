@@ -1,5 +1,6 @@
 # %%
 import pandas as pd
+import h2o
 
 # Read the seeds.csv file into a pandas dataframe
 df = pd.read_csv('seeds.csv')
@@ -8,7 +9,7 @@ df = pd.read_csv('seeds.csv')
 print(df.head())
 # %%
 # initialise h2o cluster
-
+h2o.init()
 # Prepare the data for modelling
 
 
